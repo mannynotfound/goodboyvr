@@ -1,0 +1,23 @@
+<a-scene id="aframe-project" 
+  auto-enter-vr 
+  inspector="url: https://aframe.io/releases/0.3.0/aframe-inspector.min.js">
+  <!-- assets + templates -->
+  <a-assets id="assets">
+    <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+  </a-assets>
+
+  <!-- camera + cursor -->
+  {{> camera}}
+
+  <!-- sky -->
+  <a-gradient-sky material="shader: gradient; topColor: 235 210 243; bottomColor: 180 251 255;"></a-gradient-sky>
+
+  <!-- model -->
+  <a-entity 
+    id="model"
+    scale="0.8 0.8 0.8"
+    rotation="0 90 0"
+    position="0 -1 -2" 
+    json-model="src: assets/models/dog.json"
+    animation-mixer="clip: Idle"></a-entity>
+</a-scene>

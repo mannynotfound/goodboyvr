@@ -1,0 +1,8 @@
+node_modules/
+build/
+.project
+.settings/
+.idea/
+*.log
+*.pid
+*.seed

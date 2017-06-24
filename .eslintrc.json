@@ -1,0 +1,27 @@
+{
+  "extends": "standard",
+  "env": {
+    "amd": true,
+    "browser": true,
+    "jquery": true,
+    "node": true
+  },
+  "rules": {
+    "semi": [1, "always"],
+    "no-extra-semi": 2,
+    "no-return-assign": 1,
+    "semi-spacing": [2, {
+      "before": false,
+      "after": true
+      }
+    ],
+    "spaced-comment": 0,
+    "comma-dangle": 0,
+    "space-before-function-paren": 0
+  },
+  "parser": "babel-eslint",
+  "globals": {
+    "AFRAME": true,
+    "dat": true
+  }
+}
