@@ -7,7 +7,7 @@
   </a-assets>
 
   <!-- camera + cursor -->
-  {{> camera}}
+  <a-entity id="camera" position="0 1 0" camera look-controls wasd-controls></a-entity>
 
   <!-- sky -->
   <a-gradient-sky material="shader: gradient; topColor: 235 210 243; bottomColor: 180 251 255;"></a-gradient-sky>
@@ -17,7 +17,10 @@
     id="model"
     scale="0.8 0.8 0.8"
     rotation="0 90 0"
-    position="0 -1 -2" 
+    position="0 0 -2" 
     json-model="src: assets/models/dog.json"
     animation-mixer="clip: Idle"></a-entity>
+
+  <!-- floor -->
+  <a-plane color="green" height="100" width="100" rotation="-90 0 0"></a-plane>
 </a-scene>
