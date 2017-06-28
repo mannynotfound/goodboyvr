@@ -1,3 +1,7 @@
-# aframe404
+# goodboy-VR
 
-Starter to kit to make A frame applications.
+<p align="center">
+	<img src="src/assets/images/goodboyvr.png" />
+</p>
+
+Virtual reality experience where you can pet a very good boy.

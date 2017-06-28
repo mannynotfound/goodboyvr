@@ -7,4 +7,10 @@ export function startApp(aScene) {
     const modelMesh = e.detail.model;
     modelMesh.geometry.computeVertexNormals();
   });
+
+  const rightHand = document.getElementById('right-hand');
+  rightHand.addEventListener('model-loaded', (e) => {
+    const modelMesh = e.detail.model;
+    modelMesh.material.color.setHex(0xb35900);
+  });
 }
